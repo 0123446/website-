@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width+device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="askyourfrezlogo.png">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <title>Who is me?</title>
+<style>
+p {
+  width:200px;
+  height: 200px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  15%   {background-color: purple;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  75%  {background-color: orange;}
+  100% {background-color: green;}
+}
+</style>	
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+ 
+    <body style="background-color:pink">
+    <nav>
+
+            <div class="logo">
+                <h1>Who is me?</h1>
+            </div>
+
+	<ul class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+
+        </nav>
+<div class="box">
+	<img src="akmal.jpg" width="50%" align="center">
+	<h1 style="color:white" align="center">MUHAMAD AKMAL BIN ARSHAD</h1>
+	<h2 style="color:red" align="center">WELCOME TO MY WEBSITE</h2>
+
+	<a href="https://www.facebook.com/akasutki.shiruke/"><i class="fab fa-facebook-square" style="font-size:36px;"></i></a>
+	&nbsp;&nbsp;
+	<a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram" style="font-size:36px;"></i></a>
+	&nbsp;&nbsp;
+	<a href="https://twitter.com/login?lang=en-gb"><i class="fab fa-twitter-square" style="font-size:36px;"></i></a>
+<br>
+<br>
+    <div class="wrapper">
+      <div class="display">
+        <div id="time" align="center"
+</div>
+</div>
+<span></span>
+      <span></span>
+    </div>
+<script>
+      setInterval(()=>{
+        const time = document.querySelector(".display #time");
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let day_night = "AM";
+        if(hours > 12){
+          day_night = "PM";
+          hours = hours - 12;
+        }
+        if(seconds < 10){
+          seconds = "0" + seconds;
+        }
+        if(minutes < 10){
+          minutes = "0" + minutes;
+        }
+        if(hours < 10){
+          hours = "0" + hours;
+        }
+        time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+      });
+</script>
+<br>
+	<p>This is an animation ^_^</p>
+<br>
+	<audio controls>
+	<source src="rapgod.mp3" type="audio/mpeg">
+	</audio>
+<br>
+	<video width="320" height="240" controls align="right">
+	<source src="Ikimono Gakari - Blue Bird.mp4" type="video/mp4">
+	</video>
+<br>
+	<video width="320" height="240" controls align="right">
+	<source src="video1.mp4" type="video/mp4">
+	</video>
+</div>
+</body>
+
+</html>
